@@ -18,6 +18,7 @@ Function  Calculate-File-Hash($filepath) {
  Function Erase-Baseline-If-Already-Exists() {
   $baselineExists = Test-Path -Path .\baseline.txt
 
+
   if($baselineExits) {
     #Delete it
     Remove-Item -Path .\baseline.txt
@@ -30,7 +31,6 @@ if ($response -eq "A".ToUpper()) {
   Erase-Baseline-If-Already-Exists
 
  # Calc Hash from target files and store in baseline.txt
-
  # collect all file in the target folder
   $files = Get-ChildItem -Path .\Files
   
