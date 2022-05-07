@@ -80,7 +80,7 @@ elseif ($response -eq "B".ToUpper()) {
        else {
 
          #File has been compromised, notify the user
-           Write-Host "$($hash.Path) has changed!!!" -ForegroundColor Red
+           Write-Host "$($hash.Path) has changed!!!" -ForegroundColor yellow
      }
         
       }
