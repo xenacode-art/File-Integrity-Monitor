@@ -13,3 +13,6 @@ Function  Calculate-File-Hash($filepath) {
   $filepath = Get-FileHash -Path $filepath -Algorithm SHA512
   return $filepath
 }
+
+ Function Erase-Baseline-If-Already-Exists() {
+  $baselineExists = Test-Path -Path .\baseline.txt
