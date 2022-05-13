@@ -16,3 +16,10 @@ Function  Calculate-File-Hash($filepath) {
 
  Function Erase-Baseline-If-Already-Exists() {
   $baselineExists = Test-Path -Path .\baseline.txt
+
+
+  if($baselineExits) {
+    #Delete it
+    Remove-Item -Path .\baseline.txt
+   }
+ }
