@@ -23,3 +23,12 @@ Function  Calculate-File-Hash($filepath) {
     Remove-Item -Path .\baseline.txt
    }
  }
+
+ if ($response -eq "A".ToUpper()) {
+
+  #Delete baseline.txt if it already exists
+  Erase-Baseline-If-Already-Exists
+
+ # Calc Hash from target files and store in baseline.txt
+ # collect all file in the target folder
+  $files = Get-ChildItem -Path .\Files
