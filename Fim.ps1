@@ -6,7 +6,7 @@ Write-Host "A) Collect new Baseline?"
 Write-Host "B) Begin monitoring Files with BaseLine?"
 Write-Host ""
 
-$response = Read-Host -Prompt "Please enter 'A' or ' B' "
+$response = Read-Host -Prompt "Please enter 'A' or ' B' 
 Write-Host ""
 
 
